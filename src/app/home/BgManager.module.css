@@ -1,0 +1,41 @@
+.spaceBackground {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at bottom, navy, black, darkslategray);
+    overflow: hidden;
+    animation: spaceBackgroundAnimation 10s ease-in-out infinite alternate;
+  }
+  
+  /* Add stars */
+  .spaceBackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/stars.png') repeat; /* Add a stars image for the background */
+    opacity: 0.6;
+    animation: moveStars 30s linear infinite;
+  }
+  
+  /* Moving stars animation */
+  @keyframes moveStars {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes spaceBackgroundAnimation {
+    0% {
+      background-color: #1b1b3a;
+    }
+    100% {
+      background-color: #121212;
+    }
+  }
+  
