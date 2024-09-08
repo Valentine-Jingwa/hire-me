@@ -5,6 +5,7 @@ import { FaTimes, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import BgManager from '../home/BgManager';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 // Dummy project data (replace with your own projects)
 const projects = [
