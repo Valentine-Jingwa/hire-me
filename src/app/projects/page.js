@@ -28,7 +28,17 @@ const projects = [
     demoImages: ['/project2-1.png', '/project2-2.png'],
     demoVideos: ['/project2-demo.mp4'],
     link: '/project-two',
-  },
+  }, 
+  {
+    id: 3,
+    title: 'Project Three',
+    category: 'React',
+    year: 2023,
+    description: 'Project Three is a full-stack project using React, Node.js, and MongoDB.',
+    demoImages: ['/project3-1.png', '/project3-2.png'],
+    demoVideos: ['/project3-demo.mp4'],
+    link: '/project-three',
+  }
   // Add more projects as needed
 ];
 
